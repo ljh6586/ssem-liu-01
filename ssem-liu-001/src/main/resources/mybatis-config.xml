@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <typeAliases>
+        <package name="kong.xiao.pojo"/>
+    </typeAliases>
+    <!--<environments default="development">-->
+        <!--<environment id="development">-->
+            <!--<transactionManager type="JDBC"/>-->
+            <!--<dataSource type="POOLED">-->
+                <!--<property name="driver" value="com.mysql.jdbc.Driver"/>-->
+                <!--&lt;!&ndash;                <property name="url" value="jdbc:mysql://111.230.212.103:3306/mybatis?&ndash;&gt;-->
+                <!--&lt;!&ndash;                userSSL=false&amp;&ndash;&gt;-->
+                <!--&lt;!&ndash;                userUnicode=true&amp;characterEncoding=utf-8"/>&ndash;&gt;-->
+                <!--<property name="url" value="jdbc:mysql://localhost:3306/ssmbuild?serverTimezone=UTC&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf-8"/>-->
+                <!--<property name="username" value="root"/>-->
+                <!--<property name="password" value="123456"/>-->
+            <!--</dataSource>-->
+        <!--</environment>-->
+    <!--</environments>-->
+    <mappers>
+        <mapper resource="kong/xiao/dao/BookMapper.xml"/>
+    </mappers>
+</configuration>
